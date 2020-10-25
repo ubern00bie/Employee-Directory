@@ -1,45 +1,28 @@
-import React, {useContext} from 'react';
-import TableContext from "../../utils/TableContext";
+import React, {Component} from "react";
+import Employee from "../Employee"
 
-
-
-const Table = () => {
-    // const context = useContext(TableContext);
- 
-
-    return(
-    <table class="table table-dark">
-        <thead>
-            <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            </tr>
-            <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
-    )   
-       
+class Table extends Component {  
+    state = {
+        employees : [
+            { id:1, name:'Bob Roberts', title:'Custodian' },
+            { id:2, name:'Jim James', title:'Cashier' },
+            { id:3, name:'Dick Richards', title:'Manager' }
+        ]
+    }
+    render(){
+        return(
+        <table className="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Title</th>
+                </tr>
+            </thead>
+            <Employee employees={this.state.employees}/>
+        </table>
+        )
+    }   
 }
 
 export default Table;

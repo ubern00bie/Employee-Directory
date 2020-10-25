@@ -1,28 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import './components/Table';
 import Container from "./components/Container";
 import Table from "./components/Table";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Form from "./components/Form";
+import Employee from "./components/Employee"
+
 
 const headerText = 'Employee Directory';
 //be able to sort by at least one category
 //filter users by at least one property
-function App() {
+class App extends Component {
+  render(){
   return (
-  
-    <div className="App">
-       
-      <header className="App-header">
-      <Header headerText = {headerText}/>
-      <Navbar/>
-        <Container style={{ minHeight: "80%"  }}>
-        <Table/>
+    <div className="App"> 
+        <Header headerText = {headerText} />
+        <Navbar />
+        <Container style={{ minHeight: "80%" }}>
+          <Table />
+          <Form />
         </Container>
-      </header>
     </div>
   );
+}
 }
 
 export default App;
