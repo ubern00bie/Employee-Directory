@@ -1,15 +1,7 @@
-import React, {useState, Component} from "react";
-// import getUsers from "../../utils/API"
+import React, {useState, Component, useEffect} from "react";
 import Employee from "../Employee"
 
 class Table extends Component {  
-    state = {
-        employees : [
-            { id:1, name:'Bob Roberts', title:'Custodian' },
-            { id:2, name:'Jim James', title:'Cashier' },
-            { id:3, name:'Dick Richards', title:'Manager' }
-        ]
-    }  
 
     render(){
         return(
@@ -18,10 +10,10 @@ class Table extends Component {
                 <tr>
                     <th scope="col">Employee Id</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Title</th>
+                    <th scope="col">Email</th>
                 </tr>
             </thead>
-            <Employee employees={this.state.employees}/>
+            <Employee />
         </table>
         )
     }   
