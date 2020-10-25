@@ -1,4 +1,5 @@
-import React, {Component} from "react";
+import React, {useState, Component} from "react";
+// import getUsers from "../../utils/API"
 import Employee from "../Employee"
 
 class Table extends Component {  
@@ -8,7 +9,8 @@ class Table extends Component {
             { id:2, name:'Jim James', title:'Cashier' },
             { id:3, name:'Dick Richards', title:'Manager' }
         ]
-    }
+    }  
+
     render(){
         return(
         <table className="table table-dark">

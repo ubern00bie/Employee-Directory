@@ -6,8 +6,6 @@ import Table from "./components/Table";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Form from "./components/Form";
-import Employee from "./components/Employee"
-
 
 const headerText = 'Employee Directory';
 //be able to sort by at least one category
