@@ -3,8 +3,8 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ===========================================
   ## Description
-  Allows the user to view their employee data in tabular format
-===========================================
+  View employee data in tabular format!
+
   ## Table of Contents
   - [Description](#Description)
   - [Installation-Instructions](#Installation-Instructions)
@@ -33,7 +33,7 @@
   Find me on GitHub here: https://www.github.com/ubern00bie
   
   ## License
-  Copyright (c) [year] [fullname]
+  Copyright (c) 2020 Jordan Benningfield
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
